@@ -1,0 +1,57 @@
+﻿body {
+    background-color: #dcdcdc63;
+    text-align: center;
+    width: 100%;
+    /*font-family:'Segoe UI'*/
+    font-family: 'Raleway', sans-serif;
+}
+.grid{
+width:300px;
+height:300px;
+border:1px solid black;
+display:flex;
+flex-wrap:wrap;
+margin:0 auto;
+}
+.grid div{
+width:20px;
+height:20px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    
+}
+img{
+    display:block;
+    max-height:330px;
+}
+#capturas{
+    display:flex
+}
+footer {
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    background-color: lightgray;
+}
+.botones-inicio {
+    margin:1.5rem
+}
+#bienvenidos p {
+    
+    margin:0;
+    padding:.9rem 0;
+    font-size:x-large;
+}
+#bienvenidos {
+    background-color:#dcdcdc
+}
+.button-secondary {
+    background: rgb(66, 184, 221);
+    /* this is a light blue */
+    position: absolute;
+    right: 2rem;
+    top: .6rem;
+}

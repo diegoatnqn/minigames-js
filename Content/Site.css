@@ -1,0 +1,14 @@
+﻿
+.invader {
+    background-color: purple;
+    border-radius: 10px;
+}
+.shooter{
+    background-color:forestgreen;
+}
+.laser{
+    background-color:darkorange
+}
+.boom{
+    background-color:red
+}
