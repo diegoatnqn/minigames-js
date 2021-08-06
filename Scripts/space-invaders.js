@@ -1,7 +1,33 @@
-﻿const grid = document.querySelector('.grid');
+﻿//Const elementos
+const grid = document.querySelector('.grid');
 const resultsDisplay = document.querySelector('.results');
 const instruccionesText = document.getElementById('instrucciones');
 const buttonRestartGame = document.getElementById('boton-restart');
+
+//Const botones mobile
+const moveLeft = document.getElementById('left');
+const moveRight = document.getElementById('right');
+const shoot1 = document.getElementById('shoot');
+
+moveLeft.addEventListener('click', function () {
+    squares[currentShooterIndex].classList.remove('shooter');
+    if (currentShooterIndex % width !== 0) {
+        currentShooterIndex -= 1;
+    };
+    squares[currentShooterIndex].classList.add('shooter');
+})
+
+moveRight.addEventListener('click', function () {
+    squares[currentShooterIndex].classList.remove('shooter');
+    if (currentShooterIndex % width < width - 1) {
+        currentShooterIndex += 1;
+    };
+    squares[currentShooterIndex].classList.add('shooter');
+})
+
+shoot1.addEventListener('click', shoot);
+
+//variables
 let currentShooterIndex = 202;
 let width = 15;
 let direction = 1;
@@ -159,7 +185,7 @@ function shoot(e) {
 
                 const alienRemoval = alienInvaders.indexOf(currentLaserIndex);
                 aliensMoved.push(alienRemoval);
-                resultsDisplay.innerHTML = "Puntaje: "+results;
+                resultsDisplay.innerHTML = "Puntaje: " + results;
                 results++;
             }
         }
@@ -167,9 +193,16 @@ function shoot(e) {
             clearInterval(laserID);
         }
     }
-    switch (e.key) {
-        case 'ArrowUp':
-            laserID = setInterval(moveLaser, 25); break;
+    if (e.key) {
+        switch (e.key) {
+            case 'ArrowUp':
+                laserID = setInterval(moveLaser, 25);
+                break;
+
+        }
+
+    } else {
+        laserID = setInterval(moveLaser, 25);
     }
 }
 function restartGame() {

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0">
+  <PropertyGroup>
+    <RootNamespace>mygame</RootNamespace>
+    <ProjectGuid>{6EBE955A-2CD3-4022-9181-7EB36E01BFDE}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\color-game.css" />
+    <Content Include="Content\space.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="colorGame.html" />
+    <Content Include="candy-crush.html" />
+    <Content Include="Scripts\candy-script.js" />
+    <Content Include="space-invader.html" />
+    <Content Include="Scripts\colorGame.js" />
+    <Content Include="Scripts\space-invaders.js" />
+    <Content Include="index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\StyleSheet1.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\candy-style.css" />
+  </ItemGroup>
+</Project>

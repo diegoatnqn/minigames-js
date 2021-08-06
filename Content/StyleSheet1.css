@@ -28,11 +28,12 @@ img{
     max-height:330px;
 }
 #capturas{
-    display:flex
+    display:flex;
+    flex-wrap:wrap;
 }
+
 footer {
     position: absolute;
-    bottom: 2px;
     width: 100%;
     background-color: lightgray;
 }
@@ -54,4 +55,17 @@ footer {
     position: absolute;
     right: 2rem;
     top: .6rem;
+}
+
+@media screen and (max-width:425px){
+    #capturas a {
+        max-width:290px;
+    }
+    img {
+        max-width: -webkit-fill-available;
+    }
+    .button-secondary {
+        bottom: 10px !important;
+        top: auto;
+    }
 }

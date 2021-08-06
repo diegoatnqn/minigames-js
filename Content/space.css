@@ -1,0 +1,27 @@
+﻿.pure-button {
+    background-color:#3f51b5;
+    color:white;
+}
+.invader {
+    background-color: purple;
+    border-radius: 10px;
+}
+.shooter{
+    background-color:forestgreen;
+}
+.laser{
+    background-color:darkorange
+}
+.boom{
+    background-color:red
+}
+.botones-movil{
+    display:none;
+    margin:2rem 0;
+}
+
+@media screen and (max-width:425px){
+    .botones-movil{
+        display:block;
+    }
+}

@@ -1,0 +1,55 @@
+﻿.grid {
+height:560px;
+width:560px;
+background-color:antiquewhite
+}
+.grid div{
+    height:70px;
+    width:70px;
+    border-radius:40px;
+}
+.container{
+    display:flex;
+    padding:0 5rem;
+}
+.alert{
+    display:none;
+}
+.score {
+    height: max-content;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    box-shadow: 2px 2px 7px black;
+    font-family: monospace
+}
+h3 {
+    background-color: azure;
+    padding: .5rem;
+    color: palevioletred;
+}
+@media screen and (max-width:425px){
+    .container{
+        display:inline-block;
+        padding:0 1rem;
+    }
+    .grid{
+        height:320px;
+        width:320px;
+    }
+    .grid div{
+        height:40px;
+        width:40px;
+    }
+    .alert{
+        display:block;
+        color:red;
+        background-color:white;
+        padding:1rem;
+        border:2px solid red;
+        font-weight:600;
+    }
+    
+
+}
