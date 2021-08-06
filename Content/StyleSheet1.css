@@ -2,7 +2,7 @@
     background-color: #dcdcdc63;
     text-align: center;
     width: 100%;
-    /*font-family:'Segoe UI'*/
+    height:100vh;
     font-family: 'Raleway', sans-serif;
 }
 .grid{
@@ -33,9 +33,9 @@ img{
 }
 
 footer {
-    position: absolute;
     width: 100%;
     background-color: lightgray;
+    margin:7.5% auto;
 }
 .botones-inicio {
     margin:1.5rem
