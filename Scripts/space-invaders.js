@@ -79,7 +79,17 @@ function moveShooter(e) {
                 currentShooterIndex -= 1;
             };
             break;
+        case 'a':
+            if (currentShooterIndex % width !== 0) {
+                currentShooterIndex -= 1;
+            };
+            break;
         case 'ArrowRight':
+            if (currentShooterIndex % width < width - 1) {
+                currentShooterIndex += 1;
+            };
+            break;
+        case 'd':
             if (currentShooterIndex % width < width - 1) {
                 currentShooterIndex += 1;
             };
@@ -198,6 +208,8 @@ function shoot(e) {
             case 'ArrowUp':
                 laserID = setInterval(moveLaser, 25);
                 break;
+            case 'w':
+                laserID = setInterval(moveLaser, 25); break;
 
         }
 
